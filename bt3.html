@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Gia tri hinh chu nhat</h1>
+    <button onclick="hcn()">HCN</button>
+    <h1>Gia tri hinh vuong</h1>
+    <button onclick="ht()">Hinh tron</button>
+  </body>
+  <script>
+    function hcn() {
+    var cd = parseFloat(prompt("Nhap chieu dai:"));
+    var cr = parseFloat(prompt("Nhap chieu rong:"));
+    var cv = (cd + cr) * 2;
+    var s = cd * cr;
+    console.log("Chu vi:", cv);
+    console.log("Dien tich:", s);
+}
+function ht() {
+    var bk = parseFloat(prompt("Nhap ban kinh:"));
+    var cv = bk*bk*2;
+    var s = bk*bk*3.14;
+    console.log("Chu vi:", cv);
+    console.log("Dien tich:", s);
+}
+  </script>
+</html>
